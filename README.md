@@ -36,19 +36,19 @@ grab data from localStorage and display it
 
 ## Quest detail page
 HTML elements
--title
--image
--form with multiple choice radio buttons 
--character object display somewhere (name, hp, gold)
--quest object
-    id:
-    title:
-    img:
-    description:
-    map: coordinates to position the link on top of the map image
-    choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hp: , gold: } }] 
-        description: what the option displays before you select it
-        results: what happens if you select it
+* title
+* image
+* form with multiple choice radio buttons 
+* character object display somewhere (name, hp, gold)
+* quest object
+    * id:
+    * title:
+    * img:
+    * description:
+    * map: coordinates to position the link on top of the map image
+    * choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hp: , gold: } }] 
+        * description: what the option displays before you select it
+        * results: what happens if you select it
 
 ## on page load:
 grab data from localStorage and display it 
