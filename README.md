@@ -1,25 +1,66 @@
-# Alchemy Bootstrap Template
+### create homepage, map page, and quest page
 
-## Making a plan
+**Homepage**
+HTML elements
+a form including:
+input text field for character name
+radio buttons for choosing character race
+submit button
 
-(bolded steps are mandatory, unbolded are for more advanced projects)
+**events**
+form submit 
+-generate user object 
+    name: 
+    class:
+    hp:
+    gold:
+    completed: { quest1: true, quest2: false, quest3: false};
 
-1) **Make a drawing of your app. Simple "wireframes"**
-2) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-3) **For each HTML element ask: Why do I need this?**
-4) Ask which of out HTML elements are hard coded, and which are dynamically generated?
-5) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-6) Is there some state we need to initialize?
-7) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-8) **Think about how to validate each of your steps**
-9) Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
-10) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
-11) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+**On Button CLick**
+store user object in local storage 
+redirect to map page
+
+## create map page
+HTML elements:
+-links
+  -using query parameters URL = quest?key=value
+-image of map
+-display character info
+
+events:
+links should only be clickable if the quest has not been completed
+css
+
+## on page load:
+grab data from localStorage and display it
+
+## Quest detail page
+HTML elements
+-title
+-image
+-form with multiple choice radio buttons 
+-character object display somewhere (name, hp, gold)
+-quest object
+    id:
+    title:
+    img:
+    description:
+    map: coordinates to position the link on top of the map image
+    choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hp: , gold: } }] 
+        description: what the option displays before you select it
+        results: what happens if you select it
+
+## on page load:
+grab data from localStorage and display it 
+re set updated data into local storage
 
 
-## To Run Cypress Tests
-* `npm install`
-* `npm test`
-* Cypress will open -- you should then click "run <#> integration spec(s)"
-    ![](cypress.png)
-* Make sure all tests pass
+**events**
+ on page load
+-replace page content 
+form submit - update user object, 
+display results of user choice
+redirect to map page
+
+if quests completed, redirect to results, 
+if else redirect to map
