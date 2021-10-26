@@ -1,3 +1,4 @@
+import { generateUser, setUser } from './utils.js';
 // import functions and grab DOM elements
 const userForm = document.getElementById('user-form');
 // initialize global state
