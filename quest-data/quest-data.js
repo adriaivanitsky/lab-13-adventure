@@ -18,8 +18,8 @@ const monsters = {
             turkey dinners from the village pub. They give you 35 gold for meals
             that will never be delivered. I hope you can live with yourself. 
         `,
-        hp: 0,
-        gold: 35
+        hygiene: 0,
+        money: 35
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',

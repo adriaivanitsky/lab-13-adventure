@@ -3,13 +3,16 @@
 //link should contain a URL search parameter containing the quest ID
 
 import quests from '../quest-data/quest-data.js';
+import { getUser } from '../utils.js';
 
-const mapLinks = document.getElementById('map-links');
+
+const mapLinksContainer = document.getElementById('map-links');
 
 for (let quest of quests){
     const a = document.createElement('a');
     a.href = `../quest/?id=${quest.id}`;
     a.textContent = quest.title;
+    a.classList.add('links');
 
-    mapLinks.appendChild(a);
+    mapLinksContainer.appendChild(a);
 }
