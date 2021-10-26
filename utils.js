@@ -31,3 +31,9 @@ export function scoreQuest(choiceObject, questId, userObject){
     userObject.money += choiceObject.money;
     userObject.completed[questId] = true;
 }
+
+const userInfo = document.querySelector('.user-info');
+
+export function renderUser(user){
+    const avatar = document.createElement('img');
+}

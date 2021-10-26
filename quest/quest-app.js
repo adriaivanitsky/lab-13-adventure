@@ -1,5 +1,5 @@
 import quests from '../quest-data/quest-data.js';
-import { findById } from '../utils.js';
+import { findById, getUser, setUser, scoreQuest } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
@@ -25,13 +25,13 @@ for (let choice of questData.choices){
     label.append(input, span);
     questChoices.append(label);
 
-    const button = document.createElement('button');
-    button.textContent = 'choose my choice';
-    questChoices.append(button);
+};
 
-    questChoices.addEventListener('submit', (e)=>{
-        e.preventDefault();
-    });
+const button = document.createElement('button');
+button.textContent = 'choose my choice';
+questChoices.append(button);
 
+questChoices.addEventListener('submit', (e)=>{
+    e.preventDefault();
 
-}
+});

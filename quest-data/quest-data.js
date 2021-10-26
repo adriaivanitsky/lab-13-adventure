@@ -7,45 +7,52 @@ const monsters = {
     },
     image: 'monsters.jpg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You just played a bangin' sold out show at the music hall of Williamsburg
+        in New York City. Everyone is ready to rage. You have not showered in 6 days.
+        You have been subsisting on lunchables and gas station corn dogs for a week.
+        Isaac Brock enters the green room with a bunch of friends and starts doing cocaine
+        on the table. he offers you a bump. what do you do?
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'avoid',
+        description: 'avoid him',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            you decide you don't want to listen to an annoying dude talk about himself for 3 hours
+            straight so you go back to the hotel to smoke a joint, shower, and watch naked & afraid in peace. 
+            +20 hygiene
+
         `,
-        hygiene: 0,
-        money: 35
+        hygiene: 20,
+        money: 0
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'party',
+        description: 'rage!!!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+           fuck it, yolo, time to rage! you decide to go wild with all the weirdos you just
+           met despite any negative consequences. you don't have time to shower and you reek like
+           secondhand cigarette smoke. you end up at a casino double fisting margaritas and losing at
+           blackjack. -400 dollars and -40 hygiene. 
         `,
-        hp: -30,
-        gold: 50
+        hygiene: -40,
+        money: -400
     }, {
-        id: 'run',
-        description: 'Run away like good Sir Robin',
+        id: 'hookup',
+        description: 'hook up with a stranger instead',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            not wanting to rage but not wanting to go back to the hotel yet either,
+            you find a hottie at the bar. you tell her a joke about an infinity symbol getting
+            a tattoo of a white girl on its wrist. she laughs and invites you back to her apartment
+            where she pays $3,000 a month to sleep in a clawfoot tub with 6 roomates. the exposed
+            brick is nice. 
         `,
-        hp: -50,
-        gold: 0
+        hygiene: -10,
+        money: -100
     }]
 };
 
 const dragon = {
     id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+    title: 'a long and winding road',
     map: {
         top: '17%',
         left: '37%'
@@ -54,10 +61,10 @@ const dragon = {
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        You decide you want to drive to Big Sur after your show so that you can wake up
+        to the beauty of nature before continuing on your long journey. You drive 5 hours 
+        until suddenly there's a sign about a rockslide and highway 1 is closed. 
+        What do you do?
     `,
     choices: [{
         id: 'run',

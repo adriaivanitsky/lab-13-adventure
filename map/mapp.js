@@ -4,6 +4,7 @@
 
 import quests from '../quest-data/quest-data.js';
 import { getUser } from '../utils.js';
+const user = getUser();
 
 
 const mapLinksContainer = document.getElementById('map-links');
@@ -16,3 +17,4 @@ for (let quest of quests){
 
     mapLinksContainer.appendChild(a);
 }
+
