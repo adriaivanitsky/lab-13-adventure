@@ -7,3 +7,8 @@ export function generateUser(formData){
         completed: {}
     };
 }
+
+export function setUser(userObject){
+    const userString = JSON.stringify(userObject);
+    return localStorage.setItem('USER', userString);
+}

@@ -32,3 +32,4 @@ test('generateUser should compile user inputs with preexisting stats to create u
     const actual = generateUser(formData);
     expect.deepEqual(actual, expected);
 });
+
