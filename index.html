@@ -11,40 +11,55 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>choose your tour adventure</title>
 </head>
 
 <body>
     <header>
     </header>
-
+    
     <main>
+        <h1>Choose your tour adventure!</h1>
         <form id="user-form">
-            <label for="name">
-                name your character
+            <label class="inputs" for="name">
+                name your character <br>
+                <input type="text" placeholder="Lou Reed">
             </label>
-            <legend>choose your role in the band</legend>
+            <br>
+            <br>
+            <legend class="inputs">choose your role in the band</legend>
             <p id="avatars">
                 <label>
-                    <input type="radio" name="bandmate" value="drummer">
-                    <img src="./assets/drumset.jpeg">
+                    <input type="radio" name="instrument" value="drummer">
+                    <img class="instruments" src="./assets/drumset.jpeg">
+                    <br>
                     drummer
                 </label>
+                <br>
                 <label>
-                    <input type="radio" name="bandmate" value="bassist">
-                    <img src="./assets/bass.jpeg">
+                    <input type="radio" name="instrument" value="bassist">
+                    <img class="instruments" src="./assets/bass.jpeg">
+                    <br>
                     bassist
                 </label>
+                <br>
                 <label>
-                    <input type="radio" name="bandmate" value="guitarist">
-                    <img src="./assets/guitar.jpeg">
+                    <input type="radio" name="instrument" value="guitarist">
+                    <img class="instruments" src="./assets/guitar.jpeg">
+                    <br>
                     guitarist
                 </label>
+                <br>
                 <label>
-                    <input type="radio" name="bandmate" value="keyboardist">
-                    <img src="./assets/keyboard.jpeg">
+                    <input type="radio" name="instrument" value="keyboardist">
+                    <img class="instruments" src="./assets/keyboard.jpeg">
+                    <br>
                     keyboardist
                 </label>
+                <br>
             </p>
             <button>Start your adventure!</button>
         </form>
