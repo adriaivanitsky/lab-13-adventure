@@ -50,8 +50,8 @@ const monsters = {
     }]
 };
 
-const dragon = {
-    id: 'dragon',
+const drive = {
+    id: 'drive',
     title: 'a long and winding road',
     map: {
         top: '17%',
@@ -100,30 +100,30 @@ const dragon = {
     }]
 };
 
-const treasure = {
-    id: 'treasure',
+const redrocks = {
+    id: 'redrocks',
     title: 'A Golden Treasure',
     map: {
         top: '31%',
         left: '5%'
     },
-    prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
+    // prerequisites: ['dragon', 'monsters'],
+    // image: 'treasure-chests.png',
+    // audio: 'treasure-chests.wav',
+    // action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        you are at red rocks in colorado watching my morning jacket play a 3 hour long set. you realize the person sitting
+        in front of you is mclovin. like actually. you make a bet with your friend for a hundred bucks that its really him.
+        you find a way to introduce yourself and learn it really is chris mintze plasse. you win a hundred bucks. fast forward
+        two hours and you're in the green room taking shots of tequila and playing egyptian rat screw with mclovin. he offers you
+        and your bandmates mushrooms. what do you do?
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 gold pieces!',
-        hp: 0,
-        gold: 40
+        id: 'mushroom',
+        description: 'take the mushrooms!',
+        result: 'you go on a cosmic journey with mclovin. you go for a group night hike to the top of red rocks feeling like you are exploring an alien planet',
+        hygiene: 0,
+        money: what is money
     }, {
         id: 'golden',
         description: 'A Golden Chest',
@@ -141,8 +141,8 @@ const treasure = {
 
 const quests = [
     monsters, 
-    treasure,
-    dragon,
+    redrocks,
+    drive,
 ];
 
 export default quests;
