@@ -42,4 +42,7 @@ questChoices.addEventListener('submit', (e)=>{
     const user = getUser();
     user.hygiene = user.hygiene + choiceData.hygiene;
     setUser(user);
+
+    scoreQuest();
+
 });

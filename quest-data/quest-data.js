@@ -102,7 +102,7 @@ const drive = {
 
 const redrocks = {
     id: 'redrocks',
-    title: 'A Golden Treasure',
+    title: 'make friends with mclovin',
     map: {
         top: '31%',
         left: '5%'
@@ -114,28 +114,27 @@ const redrocks = {
     description: `
         you are at red rocks in colorado watching my morning jacket play a 3 hour long set. you realize the person sitting
         in front of you is mclovin. like actually. you make a bet with your friend for a hundred bucks that its really him.
-        you find a way to introduce yourself and learn it really is chris mintze plasse. you win a hundred bucks. fast forward
-        two hours and you're in the green room taking shots of tequila and playing egyptian rat screw with mclovin. he offers you
-        and your bandmates mushrooms. what do you do?
+        what do you do next?
+        
     `,
     choices: [{
-        id: 'mushroom',
-        description: 'take the mushrooms!',
-        result: 'you go on a cosmic journey with mclovin. you go for a group night hike to the top of red rocks feeling like you are exploring an alien planet',
-        hygiene: 0,
+        id: 'introduce',
+        description: 'introduce yourself!',
+        result: 'you wait for the perfect opportunity and casually introduce yourself. ITS HIM! you win the bet. he takes you to the green room where you end up taking shots of casamigos and playing egyptian rat screw. he offers you some mushrooms. you accept, and go on a cosmic journey with mclovin.',
+        hygiene: 'nothing is gross its all just nature man',
         money: 'what is money'
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
+        id: 'chicken',
+        description: 'chicken out',
+        result: 'you felt too shy to introduce yourself to mclovin. it will forever remain a mystery.',
         hp: -50,
         gold: 0
     }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
-        hp: 35,
-        gold: 0
+        id: 'redirect',
+        description: 'find out in a roundabout way',
+        result: 'you decided to be sly and not harrasss a celebrity. you wait until after the show and decide to go with everyone for a night hike to the top of red rocks. somebody puts you in charge of carrying the half gallon of whisky to the top even though youre on mushrooms and should not be put in charge of anything at this juncture. when you make it to the top everyone cheers and you go to open the bottle of whisky. you drop the bottle. the whole thing smashes and the whisky spills out onto the rocks. mclovin saw it and he thinks youre a loser now. yes its really him. sucks to be u',
+        hygiene: 0,
+        money: -50
     }]
 };
 
