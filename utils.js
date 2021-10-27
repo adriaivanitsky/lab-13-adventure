@@ -34,6 +34,8 @@ export function scoreQuest(choiceObject, questId, userObject){
 
 const userInfo = document.querySelector('.user-info');
 
-export function renderUser(user){
-    const avatar = document.createElement('img');
-}
+// export function renderUser(user){
+//     const avatar = document.createElement('img');
+// }
+
+// export function completedAllQuests();

@@ -61,47 +61,42 @@ const dragon = {
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
-        You decide you want to drive to Big Sur after your show so that you can wake up
-        to the beauty of nature before continuing on your long journey. You drive 5 hours 
-        until suddenly there's a sign about a rockslide and highway 1 is closed. 
-        What do you do?
-    `,
+        You decide you want to drive to Big Sur after your show in san francisco so that you can wake up
+        to the beauty of nature before continuing on your long journey. everyone is drinking pabst in the van.
+        you suddenly reach a dead end. the sign says highway 1 is closed due to rockslides. the only way out is driving 
+        two hours backwards the way you just came in. it is 1am. what do you do?`
+
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
+        id: 'cry',
+        description: 'cry',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            you decide to let it all hang out and cry from a mixture of exhaustion and frustration.
+            you should have listened to your dad and been a lawyer instead. the van smells like an ogre ate a pound of weed,
+            washed it down with piss beer, and shit it out in the backseat.
         `,
-        hp: -35,
-        gold: 15
+        hygiene: -50,
+        money: -100
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'drive',
+        description: 'keep on drivin',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            you decide to take action and stay in good spirits. big sur woulda been cool, but oh well. you turn around and
+            drive the two hours back the way you came, take 68 over to 101 south, and drive until you hit king city, where
+            you proceed to park and pass out in a jack in the box parking lot at 3am. everyone sleeps in their jeans. you are
+            crunched like a shrimp in the front seat wondering why on earth you did this to yourself.
         `,
-        hp: -45,
-        gold: 0
+        hygiene: -30,
+        money: -50
     }, {
-        id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        id: 'sleep',
+        description: 'pass out',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            running only on 3 hours of sleep from the night before and a slutty bbq burrito you found on the dashboard, you 
+            give up on trying to be the one to solve the problem. you pass out with your shoes on. someone else will drive everyone
+            to safety, not u tho. 
         `,
-        hp: 0,
-        gold: 90
+        hygiene: -10,
+        money: 0
     }]
 };
 

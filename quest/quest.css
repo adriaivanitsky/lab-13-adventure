@@ -5,10 +5,14 @@
     align-items: center;
     margin-bottom: 20px;
     gap: 5px;
+    color: goldenrod;
 }
 
 body {
     text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 150%;
+    color: teal;
 }
 
 button {
@@ -21,4 +25,12 @@ p {
     width: 800px;
     margin: 0 auto;
     margin-bottom: 30px;
+}
+
+input[type=radio]:checked + img {
+    border: 3px solid teal;
+}
+
+input[type=radio]{
+    display: none;
 }
