@@ -51,4 +51,9 @@ questChoices.addEventListener('submit', (e)=>{
     questResults.textContent = choiceData.result;
     questResults.classList.remove('hidden');
 
+    const backLink = document.createElement('a');
+    backLink.href = '../map';
+    backLink.textContent = 'Back to Map';
+    questResults.append(backLink);
+
 });

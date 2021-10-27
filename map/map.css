@@ -1,10 +1,23 @@
 #map-links {
     display: flex;
     flex-direction: column;
+    font-family: 'Shrikhand', cursive;
+    gap: 20px;
+    font-size: 150%;
+    color:goldenrod;
 }
 
 .links {
     display: block;
     flex-direction: column;
     font-family: 'Shrikhand', cursive;
+    text-align: center;
+    gap: 20px;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    color: teal;
+    text-align: center;
+    font-size: 300%;
 }
