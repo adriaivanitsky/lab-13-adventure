@@ -4,7 +4,7 @@
 
 import quests from '../quest-data/quest-data.js';
 import { getUser } from '../utils.js';
-const user = getUser();
+getUser();
 
 
 const mapLinksContainer = document.getElementById('map-links');

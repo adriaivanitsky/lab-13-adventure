@@ -1,5 +1,5 @@
 import quests from '../quest-data/quest-data.js';
-import { findById, getUser, setUser, scoreQuest } from '../utils.js';
+import { findById, getUser, setUser } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
