@@ -21,3 +21,24 @@ h1 {
     text-align: center;
     font-size: 300%;
 }
+
+#user-image {
+    width:30px;
+}
+
+#user-name {
+    font-family: 'Shrikhand', cursive;
+}
+
+#user-hygiene {
+    font-family: 'Shrikhand', cursive;
+}
+
+#user-money {
+    font-family: 'Shrikhand', cursive;
+}
+
+#profile {
+    text-align: center;
+    color: goldenrod;
+}

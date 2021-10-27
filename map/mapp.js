@@ -3,9 +3,9 @@
 //link should contain a URL search parameter containing the quest ID
 
 import quests from '../quest-data/quest-data.js';
-import { getUser } from '../utils.js';
+import { getUser, loadProfile } from '../utils.js';
 getUser();
-
+loadProfile();
 
 const mapLinksContainer = document.getElementById('map-links');
 

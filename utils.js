@@ -43,3 +43,15 @@ export function scoreQuest(choiceObject, questId, userObject){
 // export function loadProfile(){
 
 // }
+
+export function loadProfile(){
+    const user = getUser();
+    const img = document.getElementById('user-image');
+    img.src = `../assets/${user.instrument}.jpeg`;
+    const name = document.getElementById('user-name');
+    name.textContent = user.name;
+    const money = document.getElementById('user-money');
+    money.textContent = user.money;
+    const hygiene = document.getElementById('user-hygiene');
+    hygiene.textContent = user.hygiene;
+}
