@@ -23,19 +23,13 @@ h1 {
 }
 
 #user-image {
-    width:30px;
+    width:50px;
 }
 
-#user-name {
+#user-name, #user-hygiene, #user-money {
     font-family: 'Shrikhand', cursive;
-}
-
-#user-hygiene {
-    font-family: 'Shrikhand', cursive;
-}
-
-#user-money {
-    font-family: 'Shrikhand', cursive;
+    display: flex;
+    flex-direction: column;
 }
 
 #profile {

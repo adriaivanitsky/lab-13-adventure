@@ -52,3 +52,20 @@ input[type=radio]{
 a {
     margin-top: 60px;
 } 
+
+
+#user-image {
+    width:50px;
+}
+
+#user-name, #user-hygiene, #user-money {
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile {
+    text-align: center;
+    color: goldenrod;
+    font-size: 75%;
+}

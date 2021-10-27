@@ -51,7 +51,7 @@ export function loadProfile(){
     const name = document.getElementById('user-name');
     name.textContent = user.name;
     const money = document.getElementById('user-money');
-    money.textContent = user.money;
+    money.textContent = `money: ${user.money}`;
     const hygiene = document.getElementById('user-hygiene');
-    hygiene.textContent = user.hygiene;
+    hygiene.textContent = `hygiene: ${user.hygiene}`;
 }
