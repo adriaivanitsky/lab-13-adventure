@@ -32,7 +32,7 @@ export function scoreQuest(choiceObject, questId, userObject){
     userObject.completed[questId] = true;
 }
 
-const userInfo = document.querySelector('.user-info');
+// const userInfo = document.querySelector('.user-info');
 
 // export function renderUser(user){
 //     const avatar = document.createElement('img');

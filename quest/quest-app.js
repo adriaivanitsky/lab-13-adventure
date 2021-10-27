@@ -25,7 +25,7 @@ for (let choice of questData.choices){
     label.append(input, span);
     questChoices.append(label);
 
-};
+}
 
 const button = document.createElement('button');
 button.textContent = 'choose my choice';
@@ -41,8 +41,14 @@ questChoices.addEventListener('submit', (e)=>{
     const choiceData = findById(questData.choices, chosenId);
     const user = getUser();
     user.hygiene = user.hygiene + choiceData.hygiene;
+    user.money = user.money + choiceData.money;
+    user.completed[questData.id] = true;
     setUser(user);
 
-    scoreQuest();
+    const questDetails = document.getElementById('quest-details');
+    questDetails.classList.add('hidden');
+    const questResults = document.getElementById('quest-results');
+    questResults.textContent = choiceData.result;
+    questResults.classList.remove('hidden');
 
 });

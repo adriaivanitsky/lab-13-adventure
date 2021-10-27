@@ -6,4 +6,5 @@
 .links {
     display: block;
     flex-direction: column;
+    font-family: 'Shrikhand', cursive;
 }

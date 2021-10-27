@@ -130,7 +130,7 @@ const redrocks = {
         hp: -50,
         gold: 0
     }, {
-        id: 'redirect',
+        id: 'roundabout',
         description: 'find out in a roundabout way',
         result: 'you decided to be sly and not harrasss a celebrity. you wait until after the show and decide to go with everyone for a night hike to the top of red rocks. somebody puts you in charge of carrying the half gallon of whisky to the top even though youre on mushrooms and should not be put in charge of anything at this juncture. when you make it to the top everyone cheers and you go to open the bottle of whisky. you drop the bottle. the whole thing smashes and the whisky spills out onto the rocks. mclovin saw it and he thinks youre a loser now. yes its really him. sucks to be u',
         hygiene: 0,
