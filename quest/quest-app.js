@@ -33,5 +33,13 @@ questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
-
+    const chosen = document.querySelector('input[type=radio]:checked');
+    const chosenId = chosen.value;
+    // console.log(chosen);
+    // console.log(chosenId);
+    // console.log(questData);
+    const choiceData = findById(questData.choices, chosenId);
+    const user = getUser();
+    user.hygiene = user.hygiene + choiceData.hygiene;
+    setUser(user);
 });

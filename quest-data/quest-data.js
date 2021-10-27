@@ -64,7 +64,7 @@ const drive = {
         You decide you want to drive to Big Sur after your show in san francisco so that you can wake up
         to the beauty of nature before continuing on your long journey. everyone is drinking pabst in the van.
         you suddenly reach a dead end. the sign says highway 1 is closed due to rockslides. the only way out is driving 
-        two hours backwards the way you just came in. it is 1am. what do you do?`
+        two hours backwards the way you just came in. it is 1am. what do you do?`,
 
     choices: [{
         id: 'cry',
@@ -123,7 +123,7 @@ const redrocks = {
         description: 'take the mushrooms!',
         result: 'you go on a cosmic journey with mclovin. you go for a group night hike to the top of red rocks feeling like you are exploring an alien planet',
         hygiene: 0,
-        money: what is money
+        money: 'what is money'
     }, {
         id: 'golden',
         description: 'A Golden Chest',
