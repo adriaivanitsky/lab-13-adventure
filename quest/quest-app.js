@@ -58,4 +58,6 @@ questChoices.addEventListener('submit', (e)=>{
     backLink.textContent = 'Back to Map';
     questResults.append(backLink);
 
+    loadProfile();
+
 });
