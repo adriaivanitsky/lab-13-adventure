@@ -1,3 +1,5 @@
+import quests from './quest-data/quest-data.js';
+
 export function generateUser(formData){
     return {
         name: formData.get('name'),
@@ -55,3 +57,31 @@ export function loadProfile(){
     const hygiene = document.getElementById('user-hygiene');
     hygiene.textContent = `hygiene: ${user.hygiene}`;
 }
+
+export function hasCompletedAllQuests(userObject){
+    for (let quest of quests){
+        if (!userObject.completed[quest.id]){
+            return false;
+        }
+    }
+    return true;
+}
+
+// export function displaySpan(quest){
+//     const span = document.createElement('span');
+//     span.textContent = quest.title;
+//     span.classList.add('quest');
+//     span.style.top = quest.map.top;
+//     span.style.left = quest.map.left;
+//     mapLinks.appendChild(span);
+// }
+
+// export function displayLink(quest){
+//     const a = document.createElement('a');
+//     a.href = `../quest-data/?id=${quest.id}`;
+//     a.textContent = quest.title;
+//     a.classList.add('quest');
+//     a.style.top = quest.map.top;
+//     a.style.left = quest.map.left;
+//     mapLinks.appendChild(a);
+// }

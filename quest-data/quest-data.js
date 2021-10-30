@@ -121,14 +121,14 @@ const redrocks = {
         id: 'introduce',
         description: 'introduce yourself!',
         result: 'you wait for the perfect opportunity and casually introduce yourself. ITS HIM! you win the bet. he takes you to the green room where you end up taking shots of casamigos and playing egyptian rat screw. he offers you some mushrooms. you accept, and go on a cosmic journey with mclovin.',
-        hygiene: 'nothing is gross its all just nature man',
-        money: 'what is money'
+        hygiene: 0,
+        money: 0
     }, {
         id: 'chicken',
         description: 'chicken out',
         result: 'you felt too shy to introduce yourself to mclovin. it will forever remain a mystery.',
-        hp: -50,
-        gold: 0
+        hygiene: -50,
+        money: 0
     }, {
         id: 'roundabout',
         description: 'find out in a roundabout way',
